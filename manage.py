@@ -4,7 +4,7 @@ from flask_migrate import Migrate, init, upgrade, migrate
 
 from app import create_app, db
 
-app = create_app('development')
+app = create_app('product')
 manager = Manager(app)
 x_migrate = Migrate(app, db)
 
